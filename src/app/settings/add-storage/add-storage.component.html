@@ -1,0 +1,17 @@
+<div class="title">
+  <h3>Saklama Alanı Ekle</h3>
+</div>
+<div class="form">
+  <div class="input-group">
+    <span>
+      İsim
+    </span>
+    <div>
+      <input #name type="text">
+    </div>
+  </div>
+
+<div class="footer">
+    <button (click)="add(name.value)">Kaydet</button>
+    <a [routerLink]="['/setting']">İptal</a>
+</div>

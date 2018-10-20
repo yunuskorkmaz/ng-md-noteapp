@@ -1,0 +1,22 @@
+<div class="storage-item">
+  <div class="root">
+    <button (click)="toggleContent()">
+      <i class="fa" [ngClass]="class"></i>
+    </button>
+    <span (click)="clickedStorage(storage)" >{{storage.name}}</span>
+    <span (click)="addNewFolder(storage)"><i class="fa fa-plus"></i></span>
+  </div>
+  <div *ngIf="isVisiable" class="folders">
+    <ul class="main-list">
+      <li *ngFor="let item of folders">
+        <div (click)="clickedFolder(item)" >
+          <i class="fa fa-folder-o" aria-hidden="true"></i>{{item.name}}
+        </div>
+        <span> 0 </span>
+      </li>
+
+    
+    </ul>
+  </div>
+
+</div>

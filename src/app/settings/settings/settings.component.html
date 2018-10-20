@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="header">
+    <button>İnfo</button>
+    <h3>
+      Ayarlar
+    </h3>
+    <span> 
+    <a [routerLink]="[ '/home']">
+        <i class="fa fa-times"></i>
+    </a>
+      
+    </span>
+  </div>
+  <div class="body">
+    <div class="menu">
+      <ul>
+        <li><a [routerLink]="['/setting/storage']" routerLinkActive="active"> Saklanama Alanı</a></li>
+        <li> <a routerLinkActive="active" [routerLink]="['/settting/interface']"> Arayüz</a> </li>
+        <li> <a routerLinkActive="active" [routerLink]="['/setting/about']" >Hakkında</a></li>
+      </ul>
+    </div>
+    <div class="content">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+
+</div>

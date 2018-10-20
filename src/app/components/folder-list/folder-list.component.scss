@@ -1,0 +1,61 @@
+:host {
+  width: 100%;
+
+  ul {
+      li {
+        padding: 10px 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #00796bcc;
+        }
+
+        div {
+          align-items: center;
+          font-size: 0.8em;
+
+          i {
+            margin-right: 10px;
+            font-size: 14px;
+          }
+
+          span {
+            font-size: 0.8em;
+            align-self: flex-end;
+          }
+        }
+      }
+    
+  }
+
+  .root {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    cursor: pointer;
+    position: relative;
+
+
+    button {
+      position: absolute;
+      height: 1em;
+      width: 1em;
+      top: 11px;
+      left: 1px;
+      background: transparent;
+      color: currentColor;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #00796b;
+      }
+    }
+
+
+
+  }
+}

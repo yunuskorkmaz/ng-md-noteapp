@@ -1,0 +1,12 @@
+<div class="header">
+  <div class="search-box">
+    <input type="text" placeholder="Ara">
+  </div>
+  <div class="new-note-button">
+    <button (click)="addNewNote()"><i class="fa fa-plus"></i></button>
+  </div>
+</div>
+<div class="note-item-list">
+  <app-note-item *ngFor="let note of noteList" [note]="note" ></app-note-item>
+
+</div>

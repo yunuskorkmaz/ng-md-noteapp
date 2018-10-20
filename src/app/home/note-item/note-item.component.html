@@ -1,0 +1,8 @@
+<div [ngClass]="{'active': selectClass}" class="item" (click)="selectNote()">
+<h4>{{note.title}}</h4>
+<p>
+  <span>{{note.createdDate}}</span>
+  <span>{{note.storageName}}</span>
+</p>
+<div>tags</div>
+</div>

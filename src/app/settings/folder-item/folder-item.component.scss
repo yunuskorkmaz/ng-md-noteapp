@@ -1,0 +1,31 @@
+:host{
+    padding: 5px;
+
+    .item{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    
+        .buttons{
+            button{
+            padding: 5px 10px;
+            font-size: 14px;
+            cursor: pointer;
+                margin-left: 5px;
+        }
+        }
+
+        .red-text{
+            font-weight: bold;
+            color: red;
+        }
+        .red-button{
+            background: red;
+            color: white;
+        }
+    }
+
+
+
+
+}

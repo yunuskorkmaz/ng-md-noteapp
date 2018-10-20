@@ -1,0 +1,35 @@
+<div class="item">
+  <div class="item-detail">
+    <ng-container *ngIf="!editMode && !deleteMode">
+      {{folder.name}}
+    </ng-container>
+    <ng-container>
+
+    </ng-container>
+    <ng-container *ngIf="!editMode && deleteMode">
+      "{{folder.name}}" klasörünü <span class="red-text">silmek istediğinize</span> emin misiniz?
+    </ng-container>
+    <ng-container *ngIf="editMode && !deleteMode">
+      <input type="text" #folder.name [(ngModel)]="folder.name">
+    </ng-container>
+
+  </div>
+  <div class="buttons">
+    <ng-container *ngIf="!editMode && !deleteMode">
+      <button (click)="editMode=true;deleteMode=false">Düzenle</button>
+      <button (click)="deleteMode=true;editMode=false">Sil</button>
+    </ng-container>
+    <ng-container *ngIf="!editMode && deleteMode">
+      <button class="red-button" (click)="deleteFolder()">Onayla</button>
+      <button (click)="editMode=false; deleteMode=false">İptal</button>
+    </ng-container>
+    <ng-container *ngIf="editMode && !deleteMode">
+      <button (click)="updateFolder()">Onayla</button>
+      <button (click)="editMode=false;deleteMode=false">İptal</button>
+    </ng-container>
+
+
+
+
+  </div>
+</div>

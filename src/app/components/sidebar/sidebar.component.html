@@ -1,0 +1,40 @@
+<nav>
+  <div class="head">
+    <a [routerLink]="['/setting']">
+        <i class="fa fa-sliders" aria-hidden="true"></i>
+    </a>
+  </div>
+  <ul class="main-list">
+    <li (click)="goto('all')">
+      <div>
+        <i class="fa fa-book" aria-hidden="true"></i>Tüm Notlar
+      </div>
+      <span> 0 </span>
+    </li>
+
+    <li>
+      <div>
+        <i class="fa fa-star-o" aria-hidden="true"></i>Yıldızlı
+      </div>
+      <span> 0 </span>
+    </li>
+
+    <li>
+      <div>
+        <i class="fa fa-trash-o" aria-hidden="true"></i>Çöp
+      </div>
+      <span> 0 </span>
+    </li>
+  </ul>
+
+  <div class="storage-list">
+    <folder-list (selectedChanged)="selectedChanged($event)" *ngFor="let item of storageList" [storage]="item"></folder-list>
+
+
+  </div>
+  <div>
+    <a (click)="addNewStorage()" >Storage Add</a>
+    <!-- <button [swal]="#Swal"></button> -->
+
+  </div>
+</nav>

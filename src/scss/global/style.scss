@@ -1,0 +1,32 @@
+html ,body{
+    width: 100%;
+    height: 100%;
+  }
+a{
+    color : #eceff1;
+}
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+body.swal2-height-auto {
+  height: 100%!important;
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+}
